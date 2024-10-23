@@ -1,0 +1,6 @@
+import pandas as pd
+data = {'branch': ['cse', 'ece', 'ee']}
+df = pd.DataFrame(data)
+df_one_hot = pd.get_dummies(df, columns=['branch'])
+
+print(df_one_hot)
